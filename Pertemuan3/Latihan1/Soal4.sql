@@ -2,9 +2,10 @@
 -- table yang digunakan: Sales.Customers and Sales.Orders
 
 SELECT 
-    c.custid, 
-    c.contactname, 
-    o.orderid
+    c.custid,
+	c.companyname,
+    o.orderid,
+	o.orderdate
 FROM 
     Sales.Customers c
 LEFT JOIN 
