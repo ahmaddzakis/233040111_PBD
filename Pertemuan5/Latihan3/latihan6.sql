@@ -1,0 +1,22 @@
+INSERT INTO Mahasiswa (nama, npm)
+VALUES 
+('Andi Nugraha', 233040111),
+('Budi Setiawan', 233040112),
+('Citra Dewi', 233040113),
+('Dewi Kusuma', 233040114),
+('Eko Pratama', 233040115),
+('Fajar Hidayat', 233040116),
+('Gita Anggraini', 233040117),
+('Hani Suryani', 233040118),
+('Iwan Setiadi', 233040119),
+('Joko Susilo', 233040110),
+('Kiki Amalia', 233040121),
+('Lala Putri', 233040122),
+('Mira Handayani', 233040123),
+('Nina Kurnia', 233040124),
+('Oki Wijaya', 233040125),
+('Putri Maharani', 233040126),
+('Rini Septiani', 233040127),
+('Sari Dewi', 233040128),
+('Tono Haryanto', 233040129),
+('Umar Wahyu', 233040130);

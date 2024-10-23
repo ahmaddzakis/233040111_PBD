@@ -1,24 +1,25 @@
-CREATE TABLE Mahasiswa (
-id bigint identity(1,1) primary key,
-NPM int,
-nama varchar(255),
-tanggal_lahir date,
-alamat varchar(100),
-no_hp int,
-jurusan_id bigint,
-dosen_wali_id bigint
-);
-
 CREATE TABLE Jurusan (
-id bigint identity(1,1) primary key,
-nama_jurusan bigint
-);
+	id bigINT IDENTITY(1,1) PRIMARY KEY,
+	nama_jurusan bigint
+)
 
 CREATE TABLE Dosen_Wali (
-id bigint identity(1,1) primary key,
-NRP bigint,
-nama varchar(255),
-tanggal_lahir date,
-alamat varchar(255),
-no_hp int
-);
+	id bigINT IDENTITY(1,1) PRIMARY KEY,
+	NIP bigint,
+	nama VARCHAR(255),
+	tanggal_lahir DATE,
+	alamat VARCHAR(255)
+)
+
+CREATE TABLE Mahasiswa (
+	id bigINT IDENTITY(1,1) PRIMARY KEY,
+	NPM bigint,
+	nama VARCHAR(255),
+	tanggal_lahir DATE,
+	alamat VARCHAR(255),
+	no_hp int,
+	jurusan_id bigint,    
+	dosen_wali_id bigint,  
+    FOREIGN KEY (jurusan_id) REFERENCES Jurusan(id),
+    FOREIGN KEY (dosen_wali_id) REFERENCES Dosen_Wali(id)
+)
